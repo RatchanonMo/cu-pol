@@ -157,7 +157,7 @@ export default function Home() {
                     {item.title}
                   </h1>
                   {item.tag.map((tag, idx) => (
-                    <p className="mr-3 inline-block bg-[#d76275] px-5 py-2 font-bold">
+                    <p key={idx} className="mr-3 inline-block bg-[#d76275] px-5 py-2 font-bold">
                       {tag}
                     </p>
                   ))}
