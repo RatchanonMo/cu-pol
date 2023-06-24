@@ -1,11 +1,39 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
+import Navbar from "@/components/Navbar";
+import Head from "next/head";
+// import Swiper core and required modules
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 
-const inter = Inter({ subsets: ['latin'] })
+import { Swiper, SwiperSlide } from "swiper/react";
 
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+
+import { IoMail } from "react-icons/io5";
+import { BsGithub, BsInstagram, BsFacebook } from "react-icons/bs";
 export default function Home() {
+  const articles = [
+    {
+      img: "article1.png",
+      date: "10 Dec 2022",
+      title: "APEC2022: ความหวังใหม่ทางเศรษฐกิจ หรือ ฟอกเขียวทุนเดิม",
+      tag: ["APEC2022", "ฟอกเขียวทุนเดิม"],
+    },
+    {
+      img: "article2.png",
+      date: "7 Dec 2022",
+      title: "สรุปงานเสวนา On the Margin of COP27Voicing the Critical Outside",
+      tag: ["COP27"],
+    },
+    {
+      img: "article3.png",
+      date: "22 Nov 2022",
+      title: "COP27: No time to waste or Waste of time?",
+      tag: ["COP27"],
+    },
+  ];
   return (
     <>
       <Head>
@@ -14,110 +42,314 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.js</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
-          </div>
-        </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
+      <Navbar />
+      <main className="container mx-auto py-20">
+        <img src="/img/logo.png" width="9%" className="mx-auto" alt="" />
+        <h1 className="mb-10 mt-4 text-center text-7xl font-extrabold text-gray-800">
+          CHULA &nbsp;<span className="text-[#dd757c]">POLITICS LAB</span>
+        </h1>
+        <p className="mx-auto max-w-5xl text-center text-2xl text-gray-800">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500st when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.
+        </p>
+        <div className="mt-20 columns-6 gap-10">
+          <div className="seal h-[600px] w-full translate-y-20 bg-[#ebb6be] "></div>
+          <div className="seal h-[600px] w-full bg-[#ebb6be]"></div>
+          <div className="seal h-[600px] w-full translate-y-36 bg-[#ebb6be]"></div>
+          <div className="seal h-[600px] w-full translate-y-36 bg-[#ebb6be]"></div>
+          <div className="seal h-[600px] w-full bg-[#ebb6be]"></div>
+          <div className="seal h-[600px] w-full translate-y-20 bg-[#ebb6be]"></div>
         </div>
       </main>
+      <div className="container mx-auto grid grid-cols-2 py-48">
+        <div>
+          <h1 className="py-8 text-5xl font-extrabold text-[#dd757c]">
+            WHAT WE DO
+          </h1>
+          <p className=" max-w-2xl text-2xl text-gray-800">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever Since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+        </div>
+      </div>
+
+      <div className="container mx-auto mb-2">
+        <p className="inline rounded-tl-xl bg-[#d66374] px-3 py-1 text-3xl font-extrabold text-white ">
+          EXPLORE OUR LABS
+        </p>
+        <p className="inline cursor-pointer rounded-tr-xl bg-[#2d262d] px-3 py-1 text-3xl font-extrabold text-white">
+          CLICK !
+        </p>
+      </div>
+
+      <Swiper
+        // install Swiper modules
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        spaceBetween={50}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        onSwiper={(swiper) => console.log(swiper)}
+        onSlideChange={() => console.log("slide change")}
+        className="w-full"
+      >
+        <SwiperSlide>
+          <img src="./img/explore.jpg" className="w-full" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="./img/explore.jpg" className="w-full" alt="" />
+        </SwiperSlide>
+      </Swiper>
+
+      <div className="container mx-auto pt-32 pb-52 ">
+        <h1 className="py-8 text-5xl font-extrabold text-[#dd757c]">
+          PROJECTS
+        </h1>
+        <div className="grid grid-cols-3 gap-32">
+          <div className="w-full">
+            <img src="./img/color_logo.png" className="w-full" alt="" />
+            <p className="mt-7 text-2xl font-bold text-gray-800 ">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry
+            </p>
+          </div>
+          <div className="w-full">
+            <img src="./img/color_logo.png" className="w-full" alt="" />
+            <p className="mt-7 text-2xl font-bold text-gray-800 ">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry
+            </p>
+          </div>
+          <div className="w-full">
+            <img src="./img/color_logo.png" className="w-full" alt="" />
+            <p className="mt-7 text-2xl font-bold text-gray-800 ">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry
+            </p>
+          </div>
+        </div>
+      </div>
+      <p className="inline bg-[#2d262d] px-20 py-3 text-5xl font-extrabold text-white ">
+        ARTICLES
+      </p>
+      <div className="bg-[#2d262d] py-28 text-white">
+        <div className="container mx-auto">
+          {articles.length > 0 ? (
+            <Swiper
+              // install Swiper modules
+              modules={[Navigation, Pagination, Scrollbar, A11y]}
+              spaceBetween={50}
+              slidesPerView={3}
+              navigation
+              pagination={{ clickable: true }}
+              onSwiper={(swiper) => console.log(swiper)}
+              onSlideChange={() => console.log("slide change")}
+            >
+              {articles.map((item, idx) => (
+                <SwiperSlide key={idx}>
+                  <img src={`./img/${item.img}`} className="w-full" alt="" />
+                  <p className="mt-7">{item.date}</p>
+                  <h1 className="my-3 text-3xl font-bold leading-relaxed">
+                    {item.title}
+                  </h1>
+                  {item.tag.map((tag, idx) => (
+                    <p className="mr-3 inline-block bg-[#d76275] px-5 py-2 font-bold">
+                      {tag}
+                    </p>
+                  ))}
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          ) : null}
+        </div>
+      </div>
+      <div className="container mx-auto py-32 ">
+        <h1 className="pb-8 text-5xl font-extrabold text-[#dd757c]">
+          PO LAB&rsquo;S NEWS
+        </h1>
+        <div className="flex gap-36 border-y border-slate-300 py-7">
+          <p className=" text-2xl font-extrabold text-gray-800">14.12.2022</p>
+          <p className=" text-2xl font-bold text-gray-700">
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s
+          </p>
+        </div>
+        <div className="flex gap-36 border-y border-slate-300 py-7">
+          <p className=" text-2xl font-extrabold text-gray-800">14.12.2022</p>
+          <p className=" text-2xl font-bold text-gray-700">
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s
+          </p>
+        </div>
+        <div className="flex gap-36 border-y border-slate-300 py-7">
+          <p className=" text-2xl font-extrabold text-gray-800">14.12.2022</p>
+          <p className=" text-2xl font-bold text-gray-700">
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s
+          </p>
+        </div>
+      </div>
+      <div className=" bg-gradient-to-br from-[#f19797] to-[#fac697] py-32">
+        <div className="mx-auto max-w-5xl text-center">
+          <h1 className="pb-8 text-center text-5xl font-extrabold text-white">
+            EXPLORE YOUR TOPICS
+          </h1>
+          <p className="mx-2 mt-4 inline-block bg-[#d76275] px-7 py-3 text-2xl  font-bold text-white">
+            APEC2022
+          </p>
+          <p className="mx-2 mt-4 inline-block bg-[#d76275] px-7 py-3 text-2xl font-bold text-white">
+            ฟอกเขียวทุนเดิม
+          </p>
+          <p className="mx-2 mt-4 inline-block bg-[#d76275] px-7 py-3 text-2xl font-bold text-white">
+            COP27
+          </p>
+          <p className="mx-2 mt-4 inline-block bg-[#d76275] px-7 py-3 text-2xl font-bold text-white">
+            APEC2022
+          </p>
+          <p className="mx-2 mt-4 inline-block bg-[#d76275] px-7 py-3 text-2xl font-bold text-white">
+            ฟอกเขียวทุนเดิม
+          </p>
+          <p className="mx-2 mt-4 inline-block bg-[#d76275] px-7 py-3 text-2xl font-bold text-white">
+            COP27
+          </p>
+          <p className="mx-2 mt-4 inline-block bg-[#d76275] px-7 py-3 text-2xl font-bold text-white">
+            APEC2022
+          </p>
+          <p className="mx-2 mt-4 inline-block bg-[#d76275] px-7 py-3 text-2xl font-bold text-white">
+            ฟอกเขียวทุนเดิม
+          </p>
+          <p className="mx-2 mt-4 inline-block bg-[#d76275] px-7 py-3 text-2xl font-bold text-white">
+            COP27
+          </p>
+        </div>
+      </div>
+
+      <div className="container mx-auto py-32 text-center">
+        <h1 className="pb-8 text-center text-5xl font-extrabold text-[#dd757c]">
+          OUR PARTNERSHIP
+        </h1>
+        <a className="opacity-60 grayscale duration-150 ease-in-out hover:opacity-100 hover:grayscale-0">
+          <img
+            src="./img/chula_logo.png"
+            className="mx-6 my-7 inline-block w-1/5"
+            alt=""
+          />
+        </a>
+        <a className="opacity-60 grayscale duration-150 ease-in-out hover:opacity-100 hover:grayscale-0">
+          <img
+            src="./img/chula_logo.png"
+            className="mx-6 my-7 inline-block w-1/5"
+            alt=""
+          />
+        </a>
+        <a className="opacity-60 grayscale duration-150 ease-in-out hover:opacity-100 hover:grayscale-0">
+          <img
+            src="./img/chula_logo.png"
+            className="mx-6 my-7 inline-block w-1/5"
+            alt=""
+          />
+        </a>
+        <a className="opacity-60 grayscale duration-150 ease-in-out hover:opacity-100 hover:grayscale-0">
+          <img
+            src="./img/chula_logo.png"
+            className="mx-6 my-7 inline-block w-1/5"
+            alt=""
+          />
+        </a>
+        <a className="opacity-60 grayscale duration-150 ease-in-out hover:opacity-100 hover:grayscale-0">
+          <img
+            src="./img/chula_logo.png"
+            className="mx-6 my-7 inline-block w-1/5"
+            alt=""
+          />
+        </a>
+        <a className="opacity-60 grayscale duration-150 ease-in-out hover:opacity-100 hover:grayscale-0">
+          <img
+            src="./img/chula_logo.png"
+            className="mx-6 my-7 inline-block w-1/5"
+            alt=""
+          />
+        </a>
+        <a className="opacity-60 grayscale duration-150 ease-in-out hover:opacity-100 hover:grayscale-0">
+          <img
+            src="./img/chula_logo.png"
+            className="mx-6 my-7 inline-block w-1/5"
+            alt=""
+          />
+        </a>
+      </div>
+
+      <div className="bg-[#f0f0f0] py-32 text-gray-800">
+        <div className="container mx-auto grid grid-cols-3 gap-36">
+          <div>
+            <h1 className="mb-5  text-3xl font-extrabold">
+              CHULA POLITICS LAB
+            </h1>
+            <p className="my-1 text-2xl">Articles</p>
+            <p className="my-1 text-2xl">Data viz/stories</p>
+            <p className="my-1 text-2xl">Projects</p>
+            <h1 className="mb-2 mt-10 text-2xl font-extrabold">
+              LAB นโยบายมานุษยวิทยา
+            </h1>
+            <h1 className="mb-2  text-2xl font-extrabold">
+              LAB นโยบายระดับมหาวิทยาลัย
+            </h1>
+            <h1 className="mb-2  text-2xl font-extrabold">
+              LAB นโยบายการศึกษา
+            </h1>
+            <h1 className="mb-2  text-2xl font-extrabold">
+              LAB นโยบายการเมืองและกฏหมาย
+            </h1>
+            <h1 className="mb-2  text-2xl font-extrabold">
+              LAB นโยบายสิ่งแวดล้อมและสาธารณภัย
+            </h1>
+          </div>
+          <div>
+            <h1 className="mb-2 text-3xl font-extrabold">ABOUT</h1>
+            <h1 className="mb-5 text-2xl font-extrabold">
+              ABOUT CHULA POLITICS LAB
+            </h1>
+            <p className="my-1 text-2xl">Background</p>
+            <p className="my-1 text-2xl">Vision</p>
+            <p className="my-1 text-2xl">Labs</p>
+            <p className="my-1 text-2xl">Partnership</p>
+            <br />
+            <br />
+            <p className="my-1 text-2xl">News</p>
+            <p className="my-1 text-2xl">Recruitment</p>
+            <p className="my-1 text-2xl">E-Service</p>
+          </div>
+          <div>
+            <h1 className="mb-2 text-3xl font-extrabold">CONTACT</h1>
+            <h1 className="mb-2 text-2xl font-bold">CHULA POLITICS LAB</h1>
+            <h1 className="mb-5 text-2xl font-bold">
+              Chulalongkorn University
+            </h1>
+            <br />
+            <p className="my-1 max-w-sm text-2xl">
+              Phayathai Road, Pathumwan, Bangkok 10330 Thailand
+            </p>
+            <br />
+            <p className="my-1 text-2xl font-bold">
+              <IoMail className="inline text-3xl" />
+              &nbsp; thecupolitics.lab@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="flex items-center justify-between px-10">
+        <img src="./img/logo.png" className="w-20" alt="" />
+        <p className="text-2xl font-bold text-gray-600">
+          Follow us &nbsp;&nbsp;
+          <BsFacebook className="mx-2 inline text-3xl" />
+          <BsInstagram className="mx-2 inline text-3xl" />
+          <BsGithub className="mx-2 inline text-3xl" />
+        </p>
+      </div>
     </>
-  )
+  );
 }
