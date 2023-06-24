@@ -50,7 +50,7 @@ export default function Home() {
         </h1>
         <p className="mx-auto max-w-5xl text-center text-2xl text-gray-800">
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          industry. Lorem Ipsum has been the industry&lsquo;s standard dummy text ever
           since the 1500st when an unknown printer took a galley of type and
           scrambled it to make a type specimen book.
         </p>
@@ -70,7 +70,7 @@ export default function Home() {
           </h1>
           <p className=" max-w-2xl text-2xl text-gray-800">
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
+            industry. Lorem Ipsum has been the industry&lsquo;s standard dummy text
             ever Since the 1500s, when an unknown printer took a galley of type
             and scrambled it to make a type specimen book.
           </p>
@@ -174,21 +174,21 @@ export default function Home() {
         <div className="flex gap-36 border-y border-slate-300 py-7">
           <p className=" text-2xl font-extrabold text-gray-800">14.12.2022</p>
           <p className=" text-2xl font-bold text-gray-700">
-            Lorem Ipsum has been the industry's standard dummy text ever since
+            Lorem Ipsum has been the industry&lsquo;s standard dummy text ever since
             the 1500s
           </p>
         </div>
         <div className="flex gap-36 border-y border-slate-300 py-7">
           <p className=" text-2xl font-extrabold text-gray-800">14.12.2022</p>
           <p className=" text-2xl font-bold text-gray-700">
-            Lorem Ipsum has been the industry's standard dummy text ever since
+            Lorem Ipsum has been the industry&lsquo;s standard dummy text ever since
             the 1500s
           </p>
         </div>
         <div className="flex gap-36 border-y border-slate-300 py-7">
           <p className=" text-2xl font-extrabold text-gray-800">14.12.2022</p>
           <p className=" text-2xl font-bold text-gray-700">
-            Lorem Ipsum has been the industry's standard dummy text ever since
+            Lorem Ipsum has been the industry&lsquo;s standard dummy text ever since
             the 1500s
           </p>
         </div>
