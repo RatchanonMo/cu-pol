@@ -335,19 +335,19 @@ export default function Home() {
             <p className="my-1 text-xl">Articles</p>
             <p className="my-1 text-xl">Data viz/stories</p>
             <p className="my-1 text-xl">Projects</p>
-            <h1 className="mb-2 mt-10 text-2xl font-extrabold">
+            <h1 className="mb-2 mt-10 text-xl font-extrabold">
               LAB นโยบายมานุษยวิทยา
             </h1>
-            <h1 className="mb-2  text-2xl font-extrabold">
+            <h1 className="mb-2  text-xl font-extrabold">
               LAB นโยบายระดับมหาวิทยาลัย
             </h1>
-            <h1 className="mb-2  text-2xl font-extrabold">
+            <h1 className="mb-2  text-xl font-extrabold">
               LAB นโยบายการศึกษา
             </h1>
-            <h1 className="mb-2  text-2xl font-extrabold">
+            <h1 className="mb-2  text-xl font-extrabold">
               LAB นโยบายการเมืองและกฏหมาย
             </h1>
-            <h1 className="mb-2  text-2xl font-extrabold">
+            <h1 className="mb-2  text-xl font-extrabold">
               LAB นโยบายสิ่งแวดล้อมและสาธารณภัย
             </h1>
           </div>

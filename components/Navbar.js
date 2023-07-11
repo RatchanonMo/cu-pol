@@ -12,7 +12,7 @@ export default function Navbar() {
         </span>
       </p>
       <div>
-        <CgMenuRight className="text-5xl" />
+        <CgMenuRight className="text-4xl" />
       </div>
     </div>
   );
