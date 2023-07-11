@@ -67,17 +67,44 @@ export default function Home() {
         </div>
       </main>
       <div className="container mx-auto grid px-10 py-48 lg:grid-cols-2">
-        <div>
-          <h1 className="py-8 text-5xl font-extrabold text-[#dd757c]">
-            WHAT WE DO
-          </h1>
-          <p className=" max-w-2xl text-2xl text-gray-800">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&lsquo;s standard dummy
-            text ever Since the 1500s, when an unknown printer took a galley of
-            type and scrambled it to make a type specimen book.
-          </p>
+        <div className="flex items-center justify-center">
+          <div>
+            <h1 className="py-8 text-5xl font-extrabold text-[#dd757c]">
+              WHAT WE DO
+            </h1>
+            <p className=" max-w-2xl text-2xl text-gray-800">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry&lsquo;s standard dummy
+              text ever Since the 1500s, when an unknown printer took a galley
+              of type and scrambled it to make a type specimen book.
+            </p>
+          </div>
         </div>
+        <Swiper
+          // install Swiper modules
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          spaceBetween={50}
+          slidesPerView={1}
+          navigation
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log("slide change")}
+          className="w-full"
+        >
+          <SwiperSlide>
+            <img
+              src="https://content.phuket101.net/wp-content/uploads/20191014210458/monkeys-hill-phuket-1.jpg"
+              className="w-full"
+              alt=""
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://content.phuket101.net/wp-content/uploads/20191014210458/monkeys-hill-phuket-1.jpg"
+              className="w-full"
+              alt=""
+            />
+          </SwiperSlide>
+        </Swiper>
       </div>
 
       <div className="container mx-auto mb-1">
