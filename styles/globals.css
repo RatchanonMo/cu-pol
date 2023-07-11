@@ -36,3 +36,22 @@
   background-image: url("https://hips.hearstapps.com/hmg-prod/images/the-53rd-annual-grammy-awards---arrivals.jpg");
   background-size: cover;
 }
+
+
+.swiper-button-next{
+  color: #fff !important;
+  right: 50px !important;
+}
+
+.swiper-button-prev{
+  color: #fff !important;
+  left: 50px !important;
+}
+
+.article .swiper-button-next{
+  color: #EAAAB8 !important;
+}
+
+.article .swiper-button-prev{
+  color: #EAAAB8 !important;
+}
