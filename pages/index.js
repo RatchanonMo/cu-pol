@@ -69,10 +69,10 @@ export default function Home() {
       <div className="container mx-auto grid px-10 py-48 lg:grid-cols-2">
         <div className="flex items-center justify-center">
           <div>
-            <h1 className="py-8 text-5xl font-extrabold text-[#dd757c]">
+            <h1 className="py-8 text-4xl font-extrabold text-[#dd757c]">
               WHAT WE DO
             </h1>
-            <p className=" max-w-2xl text-2xl text-gray-800">
+            <p className=" max-w-2xl text-xl text-gray-800">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry&lsquo;s standard dummy
               text ever Since the 1500s, when an unknown printer took a galley
@@ -135,34 +135,34 @@ export default function Home() {
       </Swiper>
 
       <div className="container mx-auto px-10 pb-52 pt-32">
-        <h1 className="py-8 text-5xl font-extrabold text-[#dd757c]">
+        <h1 className="py-8 text-4xl font-extrabold text-[#dd757c]">
           PROJECTS
         </h1>
         <div className="grid gap-28 sm:grid-cols-2 lg:grid-cols-3">
           <div className="w-full">
             <img src="./img/color_logo.png" className="w-full" alt="" />
-            <p className="mt-7 text-2xl font-bold text-gray-800 ">
+            <p className="mt-7 text-xl font-bold text-gray-800 ">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry
             </p>
           </div>
           <div className="w-full">
             <img src="./img/color_logo.png" className="w-full" alt="" />
-            <p className="mt-7 text-2xl font-bold text-gray-800 ">
+            <p className="mt-7 text-xl font-bold text-gray-800 ">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry
             </p>
           </div>
           <div className="w-full">
             <img src="./img/color_logo.png" className="w-full" alt="" />
-            <p className="mt-7 text-2xl font-bold text-gray-800 ">
+            <p className="mt-7 text-xl font-bold text-gray-800 ">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry
             </p>
           </div>
         </div>
       </div>
-      <p className="inline bg-[#2d262d] px-20 py-3 text-4xl font-extrabold text-white ">
+      <p className="inline bg-[#2d262d] px-20 py-3 text-3xl font-extrabold text-white ">
         ARTICLES
       </p>
       <div className="bg-[#2d262d] py-28 text-white">
@@ -192,7 +192,7 @@ export default function Home() {
                 <SwiperSlide key={idx}>
                   <img src={`./img/${item.img}`} className="w-full" alt="" />
                   <p className="mt-7">{item.date}</p>
-                  <h1 className="my-3 text-2xl font-bold leading-relaxed">
+                  <h1 className="my-3 text-xl font-bold leading-relaxed">
                     {item.title}
                   </h1>
                   {item.tag.map((tag, idx) => (
@@ -210,25 +210,25 @@ export default function Home() {
         </div>
       </div>
       <div className="container mx-auto max-w-7xl px-10 py-32">
-        <h1 className="pb-8 text-5xl font-extrabold text-[#dd757c]">
+        <h1 className="pb-8 text-4xl font-extrabold text-[#dd757c]">
           PO LAB&rsquo;S NEWS
         </h1>
         <div className="gap-36 border-y border-slate-300 py-7 lg:flex">
-          <p className=" text-2xl font-extrabold text-gray-800">14.12.2022</p>
+          <p className=" text-xl font-extrabold text-gray-800">14.12.2022</p>
           <p className=" text-xl font-bold text-gray-700">
             Lorem Ipsum has been the industry&lsquo;s standard dummy text ever
             since the 1500s
           </p>
         </div>
         <div className="gap-36 border-y border-slate-300 py-7 lg:flex">
-          <p className=" text-2xl font-extrabold text-gray-800">14.12.2022</p>
+          <p className=" text-xl font-extrabold text-gray-800">14.12.2022</p>
           <p className=" text-xl font-bold text-gray-700">
             Lorem Ipsum has been the industry&lsquo;s standard dummy text ever
             since the 1500s
           </p>
         </div>
         <div className="gap-36 border-y border-slate-300 py-7 lg:flex">
-          <p className=" text-2xl font-extrabold text-gray-800">14.12.2022</p>
+          <p className=" text-xl font-extrabold text-gray-800">14.12.2022</p>
           <p className=" text-xl font-bold text-gray-700">
             Lorem Ipsum has been the industry&lsquo;s standard dummy text ever
             since the 1500s
@@ -238,7 +238,7 @@ export default function Home() {
 
       <div className=" bg-gradient-to-br from-[#f19797] to-[#fac697] px-10 py-32">
         <div className="mx-auto max-w-5xl text-center">
-          <h1 className="pb-8 text-center text-5xl font-extrabold text-white">
+          <h1 className="pb-8 text-center text-4xl font-extrabold text-white">
             EXPLORE YOUR TOPICS
           </h1>
           <p className="mx-2 mt-4 inline-block bg-[#d76275] px-7 py-3 text-xl  font-bold text-white">
@@ -272,7 +272,7 @@ export default function Home() {
       </div>
 
       <div className="container mx-auto max-w-7xl px-5 py-32 text-center">
-        <h1 className="pb-8 text-center text-5xl font-extrabold text-[#dd757c]">
+        <h1 className="pb-8 text-center text-4xl font-extrabold text-[#dd757c]">
           OUR PARTNERSHIP
         </h1>
         <a className="opacity-60 grayscale duration-150 ease-in-out hover:opacity-100 hover:grayscale-0 ">
@@ -326,15 +326,15 @@ export default function Home() {
         </a>
       </div>
 
-      <div className="bg-[#f0f0f0] py-32 text-gray-800 ">
+      <div className="bg-[#f0f0f0] py-28 text-gray-800 ">
         <div className="container mx-auto grid gap-36 px-10 md:grid-cols-2 xl:grid-cols-3">
           <div>
-            <h1 className="mb-5  text-3xl font-extrabold">
+            <h1 className="mb-5  text-2xl font-extrabold">
               CHULA POLITICS LAB
             </h1>
-            <p className="my-1 text-2xl">Articles</p>
-            <p className="my-1 text-2xl">Data viz/stories</p>
-            <p className="my-1 text-2xl">Projects</p>
+            <p className="my-1 text-xl">Articles</p>
+            <p className="my-1 text-xl">Data viz/stories</p>
+            <p className="my-1 text-xl">Projects</p>
             <h1 className="mb-2 mt-10 text-2xl font-extrabold">
               LAB นโยบายมานุษยวิทยา
             </h1>
@@ -352,33 +352,33 @@ export default function Home() {
             </h1>
           </div>
           <div>
-            <h1 className="mb-2 text-3xl font-extrabold">ABOUT</h1>
+            <h1 className="mb-2 text-2xl font-extrabold">ABOUT</h1>
             <h1 className="mb-5 text-2xl font-extrabold">
               ABOUT CHULA POLITICS LAB
             </h1>
-            <p className="my-1 text-2xl">Background</p>
-            <p className="my-1 text-2xl">Vision</p>
-            <p className="my-1 text-2xl">Labs</p>
-            <p className="my-1 text-2xl">Partnership</p>
+            <p className="my-1 text-xl">Background</p>
+            <p className="my-1 text-xl">Vision</p>
+            <p className="my-1 text-xl">Labs</p>
+            <p className="my-1 text-xl">Partnership</p>
             <br />
             <br />
-            <p className="my-1 text-2xl">News</p>
-            <p className="my-1 text-2xl">Recruitment</p>
-            <p className="my-1 text-2xl">E-Service</p>
+            <p className="my-1 text-xl">News</p>
+            <p className="my-1 text-xl">Recruitment</p>
+            <p className="my-1 text-xl">E-Service</p>
           </div>
           <div>
-            <h1 className="mb-2 text-3xl font-extrabold">CONTACT</h1>
-            <h1 className="mb-2 text-2xl font-bold">CHULA POLITICS LAB</h1>
-            <h1 className="mb-5 text-2xl font-bold">
+            <h1 className="mb-2 text-2xl font-extrabold">CONTACT</h1>
+            <h1 className="mb-2 text-xl font-bold">CHULA POLITICS LAB</h1>
+            <h1 className="mb-5 text-xl font-bold">
               Chulalongkorn University
             </h1>
             <br />
-            <p className="my-1 max-w-sm text-2xl">
+            <p className="my-1 max-w-sm text-xl">
               Phayathai Road, Pathumwan, Bangkok 10330 Thailand
             </p>
             <br />
-            <p className="my-1 text-2xl font-bold">
-              <IoMail className="inline text-3xl" />
+            <p className="my-1 text-xl font-bold">
+              <IoMail className="inline text-2xl" />
               &nbsp; thecupolitics.lab@gmail.com
             </p>
           </div>
